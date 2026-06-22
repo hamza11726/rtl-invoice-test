@@ -1,42 +1,42 @@
 # Arabic RTL ERP Invoice Module
+A Laravel-based Arabic RTL invoice management assessment project.
 
 ## Features
-- Laravel Invoice Management
 - Arabic RTL Interface
 - Customer Management
-- Invoice Creation
+- Customer Dropdown Selection
+- Add Customer via Modal Form
 - Dynamic Invoice Items
-- Live Calculation
-- Server Side Validation
-- PDF Invoice Generation
-- MySQL Database Storage
+- Quantity, Unit Price, Discount & Tax
+- Live Frontend Calculations
+- Server-Side Validation
+- Server-Side Recalculation Before Saving
+- Invoice & Item Storage in MySQL
+- Invoice Listing
+- Invoice Details View
+- Arabic RTL PDF Generation
 
 ## Requirements
-- PHP >= 8
-- Laravel
+- PHP 8.3+
+- Laravel 13
 - MySQL
 - Composer
 
 ## Installation
 Clone repository
-
 composer install
 
 Create .env
 cp .env.example .env
-
-Generate key
-php artisan key:generate
 Database setup
 
 php artisan migrate
 Run project
 php artisan serve
 
-
-
-## Modules
-
+## Notes
+- No seeders are required.
+- Run migrations to create all database tables.
 
 ### Customers
 Create and select customers
@@ -56,9 +56,9 @@ Generate Arabic RTL invoice PDF
 
 
 ## Tech Stack
-- Laravel
-- PHP
+- Laravel 13.16.1
+- PHP 8.3.14
 - MySQL
-- Bootstrap
+- Bootstrap 5
 - jQuery
 - mPDF
